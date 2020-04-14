@@ -1,0 +1,14 @@
+
+<web-app>
+  <servlet>
+    <servlet-name>Bill</servlet-name>
+    <servlet-class>com.nt.BillSrv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Bill</servlet-name>
+     <url-pattern>/billurl</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>Form.html</welcome-file>
+  </welcome-file-list>
+</web-app>

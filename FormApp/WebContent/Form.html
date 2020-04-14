@@ -1,0 +1,65 @@
+
+<form action="formurl"  method="get"  >
+<table align="right">
+  <tr>
+     <td> Name1</td>
+     <td> <input type="text" name="name"></td>
+  </tr>
+  <tr>
+     <td> Age </td>
+     <td> <input type="password" name="age"></td>
+  </tr>
+  <tr>
+     <td> Address </td>
+     <td> 
+        <textarea name="address" rows="10" cols="20">
+           enter address
+        </textarea>
+     </td>
+  </tr>
+    <tr>
+     <td>Gender </td>
+     <td>
+        <input type="radio" name="gender" value="M" checked> Male &nbsp;
+         <input type="radio" name="gender" value="F"> FeMale
+     </td>
+  </tr>
+    <tr>
+     <td>Marital Status </td>
+     <td>
+        <input type="checkbox" name="ms" value="married"> Married
+     </td>
+  </tr>
+  <tr>
+     <td> Qualification </td>
+     <td><select name="qlfy">
+                  <option value="Engg">B.E/B.Tech</option>
+                  <option value="Medico">MBBS</option>
+                  <option value="arts">B.A/M.A</option>
+              </select> 
+      </td>
+  </tr>
+  <tr>
+  <td> Courses :</td>
+  <td>
+      <select  name="crs" multiple>
+         <option value="cjava">CoreJava </option>
+         <option value="ajava">AdvJava </option>
+         <option value="hibernate">Hibernate </option>
+      </select>
+  </td>
+  </tr>
+  <tr>
+    <td> Hobies </td>
+    <td>
+       <input type="checkbox"  name="hb"  value="roaming">Travelling
+        <input type="checkbox"  name="hb"  value="sleeping">Meditation
+         <input type="checkbox"  name="hb"  value="collection">Stamp Collection
+       </td>
+  </tr>
+  <tr>
+     <td> <input type="submit"  value="send" name="s1"/>    </td>
+     <td> <input type="reset"  value="cancel"/>    </td>
+  </tr>
+</table>
+</form>

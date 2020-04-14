@@ -1,0 +1,31 @@
+
+<web-app>
+    <servlet>
+        <servlet-name>f</servlet-name>
+        <servlet-class>com.nt.FirstServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>f</servlet-name>
+        <url-pattern>/furl</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>s</servlet-name>
+        <servlet-class>com.nt.SecondServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>s</servlet-name>
+        <url-pattern>/surl</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>t</servlet-name>
+        <servlet-class>com.nt.ThirdServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+        <servlet-name>t</servlet-name>
+        <url-pattern>/turl</url-pattern>
+    </servlet-mapping>
+    
+ 
+  
+</web-app>

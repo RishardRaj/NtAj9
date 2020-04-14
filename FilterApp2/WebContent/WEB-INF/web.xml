@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>FilterApp2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+   </welcome-file-list>
+   <servlet>
+     <servlet-name>main</servlet-name>
+     <servlet-class>com.nt.MainSrv</servlet-class>
+   </servlet>
+   <servlet-mapping>
+     <servlet-name>main</servlet-name>
+     <url-pattern>/loginurl</url-pattern>
+   </servlet-mapping>
+   <filter >
+     <filter-name>perf</filter-name>
+     <filter-class>com.nt.PerfTestFilter</filter-class>
+   </filter>
+   <filter-mapping>
+      <filter-name>perf</filter-name>
+      <url-pattern>/loginurl</url-pattern>
+   </filter-mapping>
+   <filter >
+     <filter-name>auth</filter-name>
+     <filter-class>com.nt.AuthFilter</filter-class>
+      <init-param>
+        <param-name>driver</param-name>
+        <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+      </init-param>
+      <init-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+      </init-param>
+      <init-param>
+        <param-name>dbuser</param-name>
+        <param-value>scott</param-value>
+      </init-param>
+      <init-param>
+        <param-name>dbpwd</param-name>
+        <param-value>tiger</param-value>
+      </init-param>
+      
+   </filter>
+   <filter-mapping>
+      <filter-name>auth</filter-name>
+      <url-pattern>/loginurl</url-pattern>
+   </filter-mapping>
+   
+</web-app>

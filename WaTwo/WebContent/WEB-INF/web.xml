@@ -1,0 +1,11 @@
+<web-app>
+  <servlet>
+    <servlet-name>xyz</servlet-name>
+    <servlet-class>com.nt.SSrv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>xyz</servlet-name>
+      <url-pattern>/surl</url-pattern>
+  </servlet-mapping>
+
+</web-app>

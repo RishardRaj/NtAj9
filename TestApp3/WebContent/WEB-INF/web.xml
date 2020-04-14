@@ -1,0 +1,13 @@
+<web-app>
+  <servlet>
+    <servlet-name>Abc</servlet-name>
+    <servlet-class>com.nt.TestSrv3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Abc</servlet-name>
+    <url-pattern>/turl</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>Form.html</welcome-file>
+  </welcome-file-list>
+</web-app>

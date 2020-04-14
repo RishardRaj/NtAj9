@@ -1,0 +1,17 @@
+
+<web-app>
+  <context-param>
+      <param-name>user</param-name>
+      <param-value>scott</param-value>
+    </context-param>
+  <servlet>
+    <servlet-name>a</servlet-name>
+    <jsp-file>/Test.jsp</jsp-file>
+  
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>a</servlet-name>
+    <url-pattern>/test1</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>

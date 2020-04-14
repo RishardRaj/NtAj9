@@ -1,0 +1,13 @@
+
+
+<web-app>
+  <servlet>
+    <servlet-name>upl</servlet-name>
+    <servlet-class>com.nt.UplSrv1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>upl</servlet-name>
+      <url-pattern>/uplurl</url-pattern>
+  </servlet-mapping>
+
+</web-app>

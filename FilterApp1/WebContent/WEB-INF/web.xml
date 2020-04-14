@@ -1,0 +1,25 @@
+<web-app>
+
+  <filter>
+    <filter-name>F</filter-name>
+    <filter-class>com.nt.ValidateFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>F</filter-name>
+    <url-pattern>/sumurl</url-pattern>
+  </filter-mapping>
+   <servlet>
+      <servlet-name>sum</servlet-name>
+	  <servlet-class>com.nt.SumServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>sum</servlet-name>
+	  <url-pattern>/sumurl</url-pattern>
+</servlet-mapping>
+
+	
+	
+	<welcome-file-list>
+	   <welcome-file>Form.html</welcome-file>
+	  </welcome-file-list>
+</web-app>

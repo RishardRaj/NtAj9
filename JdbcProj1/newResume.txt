@@ -1,0 +1,3 @@
+name:raja
+age:30
+address:hyd
